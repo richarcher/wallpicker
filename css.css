@@ -41,12 +41,15 @@ img {
   opacity: 0;
 }
 
-.paintsvg {
+.paintsvg,
+.bulbsvg {
   width: 100%;
+  height: 100%;
   top: 0%;
   left: 0%;
   z-index: 2;
   position: absolute;
+  max-width: 1280px;
 }
 
 .paintsvg path {
@@ -54,10 +57,13 @@ img {
 }
 
 .bulbsvg {
+  z-index: 3;
+}
+
+.bulbsvg svg {
   width: 12%;
   top: 25%;
   left: 21%;
-  z-index: 3;
   position: absolute;
 }
 
