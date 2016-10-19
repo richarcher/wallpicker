@@ -11,6 +11,13 @@ var init = function init() {
   window.addEventListener('resize', handleResize);
 
   loadSVGs();
+
+  var event = document.createEvent('HTMLEvents');
+  event.initEvent('change', true, false);
+
+  picker.dispatchEvent(event);
+  paintPicker.dispatchEvent(event);
+
   handleResize();
 };
 
