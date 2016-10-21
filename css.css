@@ -9,6 +9,10 @@ img {
   display: block;
 }
 
+svg * {
+  transition: fill 200ms ease-out;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
